@@ -1,5 +1,10 @@
 const puppeteer = require('puppeteer');
+const express=require("express");
+const os=require("os");
+const cpus=os.cpus().length;
+console.log(cpus);
 
+const app = express();
 (async () => {
   const browser = await puppeteer.launch({
     headless: true,
@@ -14,3 +19,6 @@ const puppeteer = require('puppeteer');
 
   await browser.close();
 })();
+
+const PORT=8000;
+app.listen(PORT,()=>{console.log(`Server is running on port ${PORT}!`)});

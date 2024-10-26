@@ -1,0 +1,12 @@
+{
+    "name": "screenshot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "screenshot.js",
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.21.1",
+        "puppeteer": "^23.6.0"
+    }
+}
